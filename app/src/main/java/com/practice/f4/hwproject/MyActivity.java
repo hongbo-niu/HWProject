@@ -51,6 +51,11 @@ public class MyActivity extends AppCompatActivity {
         edTxt3.setText(String.valueOf(val1+val2));
     }
 
+    public void subtract(View v){
+        getNumbers();
+        edTxt3.setText(String.valueOf(val1-val2));
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

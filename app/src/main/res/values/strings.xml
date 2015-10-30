@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="Greeting">What would you like to do today?</string>
     <string name="button_plus">+</string>
+    <string name="bt_minus">-</string>
 </resources>
