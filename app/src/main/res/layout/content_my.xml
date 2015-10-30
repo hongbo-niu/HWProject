@@ -44,4 +44,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:width="110dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/bt_plus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
 </RelativeLayout>

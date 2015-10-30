@@ -8,8 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
+    private EditText edTxt1 = null, edTxt2 = null, edTxt3=null;
+    private double val1, val2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,19 @@ public class MyActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_my, menu);
         return true;
+    }
+
+    private void getNumbers(){
+        edTxt1 = (EditText)findViewById(R.id.editText);
+        edTxt2 = (EditText)findViewById(R.id.editText2);
+        val1 = Double.parseDouble(edTxt1.getText().toString());
+        val2 = Double.parseDouble(edTxt2.getText().toString());
+        edTxt3 = (EditText)findViewById(R.id.editText3);
+    }
+
+    public void addNumbers(View v){
+        getNumbers();
+        edTxt3.setText(String.valueOf(val1+val2));
     }
 
     @Override
