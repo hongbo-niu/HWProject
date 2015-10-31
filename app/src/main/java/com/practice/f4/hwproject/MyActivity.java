@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
-    private EditText edTxt1 = null, edTxt2 = null, edTxt3=null;
+    private EditText edTxt1, edTxt2, edTxt3;
     private double val1, val2;
 
     @Override
