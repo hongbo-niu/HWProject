@@ -38,7 +38,7 @@ public class MyActivity extends AppCompatActivity {
         return true;
     }
 
-    /*This function is mainly for internal use*/
+    /* This function is mainly for internal use */
     private void getNumbers(){
         edTxt1 = (EditText)findViewById(R.id.editText);
         edTxt2 = (EditText)findViewById(R.id.editText2);
