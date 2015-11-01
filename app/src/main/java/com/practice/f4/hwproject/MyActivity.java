@@ -52,6 +52,7 @@ public class MyActivity extends AppCompatActivity {
         edTxt3.setText(String.valueOf(val1+val2));
     }
 
+    /* From mdw */
     public void subtract(View v){
         getNumbers();
         edTxt3.setText(String.valueOf(val1-val2));
