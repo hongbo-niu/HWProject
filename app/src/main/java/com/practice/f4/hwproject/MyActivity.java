@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
-    private EditText edTxt1, edTxt2, edTxt3;
+    private EditText edTxt3;
     private double val1, val2;
 
     @Override
@@ -40,8 +40,8 @@ public class MyActivity extends AppCompatActivity {
 
     /* This function is mainly for internal use */
     private void getNumbers(){
-        edTxt1 = (EditText)findViewById(R.id.editText);
-        edTxt2 = (EditText)findViewById(R.id.editText2);
+        EditText edTxt1 = (EditText)findViewById(R.id.editText);
+        EditText edTxt2 = (EditText)findViewById(R.id.editText2);
         val1 = Double.parseDouble(edTxt1.getText().toString());
         val2 = Double.parseDouble(edTxt2.getText().toString());
         edTxt3 = (EditText)findViewById(R.id.editText3);
@@ -64,7 +64,6 @@ public class MyActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
