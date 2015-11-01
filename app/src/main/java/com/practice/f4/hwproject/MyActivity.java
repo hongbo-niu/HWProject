@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
-    private EditText edTxt1, edTxt2, edTxt3;
     private double val1, val2;
 
     @Override
@@ -40,22 +39,30 @@ public class MyActivity extends AppCompatActivity {
 
     /* This function is mainly for internal use */
     private void getNumbers(){
-        edTxt1 = (EditText)findViewById(R.id.editText);
-        edTxt2 = (EditText)findViewById(R.id.editText2);
+        EditText edTxt1 = (EditText)findViewById(R.id.editText);
+        EditText edTxt2 = (EditText)findViewById(R.id.editText2);
         val1 = Double.parseDouble(edTxt1.getText().toString());
         val2 = Double.parseDouble(edTxt2.getText().toString());
-        edTxt3 = (EditText)findViewById(R.id.editText3);
     }
 
     public void addNumbers(View v){
         getNumbers();
+        EditText edTxt3 = (EditText)findViewById(R.id.editText3);
         edTxt3.setText(String.valueOf(val1+val2));
     }
 
     /* From mdw */
     public void subtract(View v){
         getNumbers();
+        EditText edTxt3 = (EditText)findViewById(R.id.editText3);
         edTxt3.setText(String.valueOf(val1-val2));
+    }
+
+    /* From branch multiply */
+    public void multiply(View v){
+        getNumbers();
+        EditText edTxt3 = (EditText)findViewById(R.id.editText3);
+        edTxt3.setText(String.valueOf(val1*val2));
     }
 
     @Override

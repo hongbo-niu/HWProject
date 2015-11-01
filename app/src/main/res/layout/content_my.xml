@@ -49,9 +49,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/bt_multiply"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="185dp" />
+        android:layout_marginTop="97dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -61,4 +61,13 @@
         android:layout_below="@+id/bt_plus"
         android:layout_centerHorizontal="true"
         android:onClick="subtract"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/bt_multiply"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="multiply"/>
 </RelativeLayout>
