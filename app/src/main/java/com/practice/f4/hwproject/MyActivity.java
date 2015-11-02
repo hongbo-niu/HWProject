@@ -58,12 +58,20 @@ public class MyActivity extends AppCompatActivity {
         edTxt3.setText(String.valueOf(val1-val2));
     }
 
+    /* From branch multiply */
+    public void multiply(View v){
+        getNumbers();
+        EditText edTxt3 = (EditText)findViewById(R.id.editText3);
+        edTxt3.setText(String.valueOf(val1*val2));
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
