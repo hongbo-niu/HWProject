@@ -61,7 +61,6 @@ public class MyActivity extends AppCompatActivity {
     /* From branch multiply */
     public void multiply(View v){
         getNumbers();
-        EditText edTxt3 = (EditText)findViewById(R.id.editText3);
         edTxt3.setText(String.valueOf(val1*val2));
     }
 
